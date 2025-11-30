@@ -1,0 +1,122 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+  }
+  
+  /* Full-page layout */
+  .app-container {
+    min-height: 100vh;
+    background: #f3f4f6;                 /* Light gray background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+  }
+  
+  /* Main Todo Card */
+  .todo-box {
+    background: white;
+    width: 420px;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    margin-bottom: 30px;
+    animation: fadeIn 0.4s ease;
+  }
+  
+  .title {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Input styling */
+  .input-row {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.2s ease;
+  }
+  
+  .input-row:focus {
+    border-color: #4f46e5;              /* Indigo focus border */
+  }
+  
+  /* Add button */
+  .add-btn {
+    width: 100%;
+    background: #4f46e5;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .add-btn:hover {
+    background: #4338ca;
+  }
+  
+  /* Task List */
+  ul {
+    list-style: none;
+    width: 420px;
+    padding: 0;
+  }
+  
+  li {
+    background: #ffffff;
+    padding: 12px 14px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  
+  li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Delete Button */
+  li button {
+    background: #ef4444;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  
+  li button:hover {
+    background: #dc2626;
+  }
+  
+  /* Subtle fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
